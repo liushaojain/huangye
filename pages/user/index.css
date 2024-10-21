@@ -1,0 +1,112 @@
+.container ,.search{
+	background: #F7F7F7;
+}
+/* .search{
+	padding: 16rpx;
+}
+.uni-searchbar{
+	padding: 0;
+} */
+.nav-bar {
+	display: flex;
+	padding: 20rpx 16rpx;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-bar .bar-title {
+	flex: 1;
+	text-align: center;
+	font-size: 30rpx;
+}
+
+.bar-left,
+.bar-right {
+	color: #666666;
+	font-size: 28rpx;
+	width:100rpx;
+}
+.bar-right {
+	text-align: right;
+}
+.swiper-item img{
+	width: 100%;
+}
+.swiper{
+	height: 450rpx !important;
+}
+.features{
+	display: flex;
+	height: 100rpx;
+	padding: 16rpx;
+}
+.features .item{
+	flex: 1;
+	margin-right: 10rpx;
+	background: #FFFFFF;
+	font-size: 28rpx;
+	height: 100rpx;
+	text-align: center;
+	line-height: 100rpx;
+}
+.features .item:last-child{
+	margin: 0;
+}
+
+.Program{
+	display: flex;
+	height: 210rpx;
+	padding: 16rpx;
+}
+.Program .item:last-child{
+	flex-direction: column;
+	margin-left: 10rpx;
+}
+.Program .item,.Program .item{
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Program view .item:nth-child(2){
+	margin-top: 10rpx;
+}
+.Program .child{
+	background: #FFFFFF;
+	display: flex;
+	flex: 1;
+	width: 100%;
+	height: 210rpx;
+	font-size: 28rpx;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Program .child.top10{
+	margin-top: 10rpx;
+}
+.labelGroup{
+	display: flex;
+	padding: 16rpx;
+}
+.labelGroup .item{
+	height: 40rpx;
+	line-height: 40rpx;
+	margin-right: 8rpx;
+	font-size: 24rpx;
+	flex: 1;
+	text-align: center;
+	border-radius: 40rpx;
+}
+.labelGroup .item.active{
+	background: #FFFFFF;
+}
+.product {
+	margin: 10px;
+	column-count: 2;
+	column-gap: 10px;
+}
+.product img{
+	width: 100%;
+}

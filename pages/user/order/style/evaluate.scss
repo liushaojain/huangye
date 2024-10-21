@@ -1,0 +1,134 @@
+.order-evaluate{
+	padding: 24rpx 0;
+	.evaluate-main{
+		width: 100%;
+		background-color: #FFFFFF;
+		border-radius: 16rpx;
+		padding: 30rpx;
+		.order-goods{
+			padding-bottom: 24rpx;
+			border-bottom: 1rpx solid #F4F5F6;
+			image{
+				width: 132rpx;
+				height: 132rpx;
+				border-radius: 8rpx;
+			}
+			.order-goods-info{
+				flex-direction: column;
+				width: 534rpx;
+				.order-goods-item-title{
+					font-size: 28rpx;
+					text{
+						&.last-title{
+							color: #93989F;
+						}
+					}
+				}
+				.order-goods-item-tag{
+					display:flex;
+					view{
+						font-size: 20rpx;
+						color: #1F90FF;
+						line-height: 32rpx;
+						background: #DEEFFF;
+						border-radius: 4rpx;
+						padding: 0 8rpx;
+					}
+				}
+			}
+		}
+		.evaluate-content{
+			.evaluate-textarea{
+				padding-top: 24rpx;
+				position: relative;
+				width: 100%;
+				height: 168rpx;
+				.placeholder{
+					font-size: 30rpx;
+					color: #C9CBCF;
+				}
+				.textarea {
+					position: absolute;
+					width: 100%;
+					height: 168rpx;
+					left: 0;
+					top: 0;
+					z-index: 99;
+					background: trasnparent;
+					line-height: 42rpx;
+					font-size: 30rpx;
+					padding-top: 24rpx;
+				}
+			}
+			.image-upload{
+				.uni-uploader {
+					flex: 1;
+					flex-direction: column;
+				}
+				.uni-uploader-head {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+				}
+				.uni-uploader-info {
+					color: #B2B2B2;
+				}
+				.uni-uploader-body {
+					margin-top: 16rpx;
+				}
+				.uni-uploader__files {
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+				}
+				.uni-uploader__file {
+					margin: 18rpx;
+					width: 144rpx;
+					height: 144rpx;
+					position: relative;
+				}
+				.uni-uploader__img {
+					display: block;
+					width: 144rpx;
+					height: 144rpx;
+					border-radius: 16rpx;
+				}
+				.uni-uploader__input-box {
+					position: relative;
+					margin:18rpx;
+					width: 144rpx;
+					height: 144rpx;
+					border: 4rpx dashed #C9CBCF;
+					border-radius: 16rpx;
+					padding-top: 30rpx;
+				}
+				.uni-uploader__input-box-icon, .uni-uploader__input-box-text {
+					color: #60656C;
+					font-size: 28rpx;
+				}
+				.uni-uploader__input-box:active {
+					border-color: #999999;
+				}
+				.uni-uploader__input-box:active:before,
+				.uni-uploader__input-box:active:after {
+					background-color: #999999;
+				}
+				.uni-uploader__input {
+					position: absolute;
+					z-index: 1;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					opacity: 0;
+				}
+				.del-icon{
+					position: absolute;
+					right: -18upx;
+					top: -22upx;
+					z-index: 1;
+				}
+			}
+		}
+	}
+}

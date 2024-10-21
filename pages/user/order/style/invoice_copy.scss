@@ -1,0 +1,166 @@
+.invoice-page{
+	padding: 24rpx 0 150rpx;
+	.invoice-warn{
+		background-color: #E5F2FF;
+		border-radius: 12rpx;
+		width: 100%;
+		padding: 12rpx 30rpx;
+		margin-bottom: 16rpx;
+		.iconfont{
+			padding-top: 4rpx;
+		}
+		.warn-text{
+			font-size: 26rpx;
+			margin-left: 12rpx;
+		}
+	}
+	.invoice-detail{
+		width: 100%;
+		background-color: #FFFFFF;
+		border-radius: 16rpx;
+		padding: 30rpx;
+		>view{
+			font-size: 28rpx;
+		}
+	}
+	.invoice-add{
+		font-size: 26rpx;
+		color: #93989F;
+		line-height: 82rpx;
+		padding: 0 30rpx;
+		>view{
+			&:last-child{
+				font-size: 30rpx;
+			}
+		}
+	}
+	.empty{
+		margin-top: 160rpx;
+		text-align: center;
+		image{
+			width: 340rpx;
+			height: 180rpx;
+			margin: 0 auto 40rpx;
+		}
+		view{
+			font-size: 30rpx;
+			color: #60656C;
+		}
+	}
+	.invoice-list{
+		width: 100%;
+		background-color: #FFFFFF;
+		border-radius: 16rpx;
+		padding: 30rpx;
+		.invoice-item{
+			height: 90rpx;
+			margin-bottom: 60rpx;
+			&:last-child{
+				margin-bottom: 0;
+			}
+			.item-left{
+				.radio{
+					margin-right: 24rpx;
+				}
+				.item-icon{
+					width: 90rpx;
+					height: 90rpx;
+					border-radius: 100%;
+					margin-right: 20rpx;
+					&.green{
+						background-color: #39C564;
+					}
+					&.blue{
+						background-color: #1F90FF;
+					}
+					.iconfont{
+						font-size: 48rpx;
+						color: #FFFFFF;
+					}
+				}
+				.item-content{
+					width: 440rpx;
+					.item-title{
+						font-size: 30rpx;
+						line-height: 50rpx;
+					}
+					.invoice-no{
+						font-size: 24rpx;
+						color: #60656C;
+						line-height: 40rpx;
+						.def-btn{
+							display: inline-block;
+							width: 80rpx;
+							height: 40rpx;
+							background-color: #DEEFFF;
+							margin-right: 8rpx;
+							border-radius: 4rpx;
+						}
+					}
+				}
+			}
+		}
+	}
+	.apply-btn{
+		width: 100%;
+		height: 120rpx;
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		background-color: #FFFFFF;
+		padding: 0 30rpx;
+		view{
+			width: 100%;
+			background-color: #1F90FF;
+			color: #FFFFFF;
+			line-height: 88rpx;
+			font-size: 32rpx;
+			border-radius: 12rpx;
+		}
+	}
+	.invoice-explain-dialog{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background-color: rgba(0,0,0,0.6);
+		z-index: 99;
+		.dialog-content{
+			background-color: #FFFFFF;
+			border-radius: 24rpx 24rpx 0rpx 0rpx;
+			padding-top: 30rpx;
+			position: absolute;
+			width: 100%;
+			left: 0;
+			bottom: 0;
+			.dialog-title{
+				font-size: 30rpx;
+				margin-bottom: 48rpx;
+			}
+			.dialog-text{
+				padding: 0 30rpx 40rpx;
+				>view{
+					&.point{
+						width: 12rpx;
+						height: 12rpx;
+						border-radius: 100%;
+						background-color: #1F90FF;
+						margin-top: 10rpx;
+					}
+					&:last-child{
+						width: 662rpx;
+						font-size: 26rpx;
+						color: #60656C;
+					}
+				}
+				
+			}
+			.dialog-bottom{
+				line-height: 88rpx;
+				font-size: 30rpx;
+				border-top: 16rpx solid #F4F5F6;
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+.complain-page{
+	height: 100vh;
+	background-color: #F5F5F5;
+	.complain-title{
+		font-size: 32rpx;
+		line-height: 125rpx;
+		text-align: center;
+	}
+	.complain-list{
+		width: 100%;
+		background: #FFFFFF;
+		border-radius: 24rpx;
+		padding: 0 30rpx;
+		>view{
+			&:first-child{
+				border-bottom: 1rpx solid #F5F5F5;
+			}
+			padding: 30rpx 0;
+			.complain-item{
+				margin-left: 28rpx;
+				>view{
+					&:first-child{
+						font-size: 28rpx;
+						line-height: 40rpx;
+						margin-bottom: 8rpx;
+					}
+					&:last-child{
+						font-size: 24rpx;
+						color: #93989F;
+						line-height: 32rpx;
+					}
+				}
+			}
+		}
+		.iconicon_label_arrow_right{
+			color: #93989F;
+		}
+	}
+}

@@ -1,0 +1,223 @@
+.cancel-order, .confirm-receipt-dialog{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	.dialog-mask{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.6);
+		z-index: 101;
+	}
+	.order-dialog{
+		position: absolute;
+		width: 100%;
+		left: 0;
+		bottom: 0;
+		z-index: 102;
+		height: 750rpx;
+		padding-bottom: 118rpx;
+		background-color: #FFFFFF;
+		border-radius: 24rpx 24rpx 0rpx 0rpx;
+		padding-top: 30rpx;
+		overflow: hidden;
+		.dialog-title{
+			font-size: 32rpx;
+			color: #303336;
+			text-align: center;
+			line-height: 45rpx;
+			margin-bottom: 16rpx;
+		}
+		.dialog-subTitle{
+			font-size: 24rpx;
+			color: #FF5C33;
+			text-align: center;
+			line-height: 32rpx;
+			margin-bottom: 48rpx;
+		}
+		.dialog-reason-title{
+			font-size: 24rpx;
+			color: #93989F;
+			padding-left: 64rpx;
+			line-height: 32rpx;
+		}
+		.dialog-close,.dialog-sure{
+			width: 330rpx;
+			height: 80rpx;
+			line-height: 80rpx;
+			background: #FFFFFF;
+			border-radius: 40rpx;
+			border: 1px solid #C9CBCF;
+			color: #303336;
+			font-size: 30rpx;
+			box-sizing: border-box;
+		}
+		.dialog-sure{
+			border: none;
+		}
+		.dialog-container{
+			height: 666rpx;
+			width: 100%;
+			overflow: auto;
+		}
+		.dialog-conent{
+			height: 450rpx;
+			overflow-y: scroll;
+			border-bottom: 16rpx solid #E9EBEC;
+			.dialog-reason-list{
+				.dialog-reason-item{
+					line-height: 88rpx;
+					border-bottom: 1rpx solid #F4F5F6;
+					padding: 0 40rpx 0 64rpx;
+					display: flex;
+					justify-content: space-between;
+					font-size: 30rpx;
+					color: #303336;
+					&.active{
+						color: #1F90FF !important;
+						view{
+							color: #1F90FF !important;
+						}
+					}
+					.iconfont{
+						display: inline-block;
+						width: 48rpx;
+						height: 48rpx;
+					}
+				}
+			}
+			.other-reason{
+				width: 100%;
+				padding: 24rpx 40rpx 24rpx 64rpx;
+				textarea{
+					width: 100%;
+					height: 178rpx;
+				}
+			}
+		}
+		
+		.dialog-order-detail{
+			padding: 0 30rpx;
+			.diaolog-order-detail-item{
+				width: 100%;
+				border-radius: 12rpx;
+				background-color: #F4F5F6;
+				line-height: 36rpx;
+				padding: 20rpx 24rpx 24rpx;
+				.item-left{
+					width: 420rpx;
+					font-size: 26rpx;
+					color: #303336;
+					text{
+						color: #93989F;
+					}
+					.receipt-item-info-tag{
+						display: inline-block;
+						width: 56rpx;
+						height: 32rpx;
+						text-align: center;
+						line-height: 32rpx;
+						background: #DEEFFF;
+						border-radius: 4rpx;
+						font-size: 20rpx;
+						color: #1F90FF;
+					}
+				}
+				.item-right{
+					font-size: 24rpx;
+					color: #93989F;
+					text{
+						color: #303336;
+					}
+				}
+				.flex-item{
+					display: flex;
+					justify-content: space-between;
+				}
+				.diaolog-order-detail-item-orderNo{
+					padding-bottom: 16rpx;
+					border-bottom: 1rpx solid #DFE0E2;
+				}
+				.diaolog-order-detail-item-title{
+					padding: 20rpx 0;
+				}
+				.diaolog-order-detail-item-part{
+					margin-top: 20rpx;
+					.item-left{
+						text{
+							display: inline-block;
+							background-color: #DEEFFF;
+							border-radius: 4rpx;
+							color: #1F90FF;
+							font-size: 20rpx;
+							line-height: 32rpx;
+							padding: 0 8rpx;
+						}
+					}
+					
+				}
+				.diaolog-order-detail-item-total{
+					text-align: right;
+					color: #303336;
+					font-size: 24rpx;
+					text{
+						color: #FF3931;
+					}
+				}
+			}
+		}
+		.dialog-signature{
+			padding: 0 30rpx 30rpx;
+			border-bottom: 16rpx solid #F4F5F6;
+			.dialog-signature-title{
+				line-height: 80rpx;
+				color: #303336;
+				font-size: 28rpx;
+			}
+			.dialog-signature-area{
+				position: relative;
+				background-color: #F4F5F6;
+				width: 100%;
+				height: 320rpx;
+				text-align: center;
+				line-height: 280rpx;
+				border-radius: 12rpx;
+				color: #93989F;
+				font-size: 32rpx;
+			}
+		}
+		.dialog-actions{
+			background: white;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			display: flex;
+			justify-content: space-around;
+			padding: 15rpx 0;
+			text-align: center;
+			.button{
+				width: 330rpx;
+				line-height: 80rpx;
+				font-size: 30rpx;
+				text-align: center;
+				border-radius: 40rpx;
+			}
+			.dialog-close{
+				color: #1F90FF;
+				background-color: #DEEFFF;
+				margin-left: 0;
+				border: none;
+			}
+			.dialog-sure{
+				color: #FFFFFF;
+				background-color: #F9353B;
+			}
+		}
+	}
+}

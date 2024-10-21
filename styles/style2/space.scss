@@ -1,0 +1,123 @@
+.mt1 {
+    margin-top: 1px;
+}
+
+.mt24 {
+    margin-top: 24upx;
+}
+
+.mr24 {
+    margin-right: 24upx;
+}
+
+.ml24 {
+    margin-left: 24upx;
+}
+
+.pt24 {
+    padding-top: 24upx;
+}
+
+.pr24 {
+    padding-right: 24upx;
+}
+
+.pb24 {
+    padding-bottom: 24upx;
+}
+
+.pl24 {
+    padding-left: 24upx;
+}
+
+.pt88 {
+    padding-top: 88upx;
+}
+
+.mlr24 {
+    margin-left: 24upx;
+    margin-right: 24upx;
+}
+
+.ptb24 {
+    padding-top: 24upx;
+    padding-bottom: 24upx;
+}
+
+.plr24 {
+    padding-left: 24upx;
+    padding-right: 24upx;
+}
+
+
+.p5{
+	padding:5rpx;
+}
+
+.p1{
+	padding:1rpx;
+}
+
+.p20 {
+    padding: 20upx;
+}
+
+.p24 {
+    padding: 24upx;
+}
+
+.p30 {
+    padding: 30upx;
+}
+
+.p40 {
+    padding: 40upx;
+}
+
+
+@for $i from 1 through 30 {
+	.mt#{$i*1}{
+		margin-top: $i * 1upx;
+	}
+	.pt#{$i*1}{
+		padding-top: $i * 1upx;
+	}  
+	.pb#{$i*1}{
+		padding-bottom: $i * 1upx;
+	}  
+}
+
+@for $i from 1 through 20 {
+	.pl#{$i*1}{
+		padding-left: $i * 1upx;
+	} 
+	.pr#{$i*1}{
+		padding-right: $i * 1upx;
+	}  
+	.mb#{$i*1}{
+		margin-bottom: $i * 1upx;
+	}  
+	.ml#{$i*1}{
+		margin-left: $i * 1upx;
+	}  
+	.mr#{$i*1}{
+		margin-right: $i * 1upx;
+	}  
+	.mlr#{$i*1}{
+		margin-left: $i * 1upx;
+		margin-right: $i * 1upx;
+	}  
+	.mtb#{$i*1}{
+		margin-top: $i * 1upx;
+		margin-bottom: $i * 1upx;
+	}  
+	.ptb#{$i*1}{
+		padding-top: $i * 1upx;
+		padding-bottom: $i * 1upx;
+	}  
+	.plr#{$i*1}{
+		padding-left: $i * 1upx;
+		padding-right: $i * 1upx;
+	}  
+}
+

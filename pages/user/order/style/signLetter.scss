@@ -1,0 +1,99 @@
+.sign-letter-page{
+	min-height: 100vh;
+	background-color: #f5f5f5;
+	padding-top: 16rpx;
+	.sign-letter-info{
+		width: 100%;
+		background-color: #FFFFFF;
+		padding: 30rpx;
+		border-radius: 24rpx;
+		.sign-letter-info-item{
+			margin-bottom: 30rpx;
+			>view{
+				font-size: 28rpx;
+				&:last-child{
+					color: #60656C;
+				}
+			}
+		}
+		.img-box{
+			.img-title{
+				font-size: 28rpx;
+				margin-bottom: 12rpx;
+			}
+			image{
+				width: 690rpx;
+				height: 690rpx;
+			}
+		}
+	}
+	.path-text{
+		font-size: 26rpx;
+		color: #60656C;
+		padding-left: 30rpx;
+		line-height: 82rpx;
+	}
+	.questions-list{
+		width: 100%;
+		background-color: #FFFFFF;
+		padding: 30rpx;
+		border-radius: 24rpx;
+		.questions-title{
+			font-size: 26rpx;
+			line-height: 36rpx;
+			margin-bottom: 30rpx;
+			text{
+				margin-right: 12rpx;
+			}
+		}
+		.questions-item{
+			.question-title{
+				line-height: 72rpx;
+				background: #F4F5F6;
+				border-radius: 8rpx;
+				font-size: 30rpx;
+				padding-left: 16rpx;
+			}
+			.question-option{
+				padding: 16rpx 0 30rpx 0;
+				label{
+					display: block;
+					padding-left: 72rpx;
+					line-height: 72rpx;
+					font-size: 30rpx;
+				}
+			}
+		}
+	}
+	textarea{
+		width: 650rpx;
+		height: 100rpx;
+		background: #F4F5F6;
+		border-radius: 8rpx;
+		line-height: 44rpx;
+		font-size: 28rpx;
+		padding: 16rpx 20rpx;
+	}
+	.letter-explain{
+		padding: 0 30rpx 30rpx;
+		>view{
+			font-size: 28rpx;
+			&:nth-child(2), &:last-child{
+				color: #60656C;
+			}
+			&:first-child, &:nth-child(3) {
+				line-height: 78rpx;
+			}
+		}
+	}
+	.submit-btn{
+		width: 690rpx;
+		line-height: 88rpx;
+		background-color: #1F90FF;
+		color: #FFFFFF;
+		border-radius: 44rpx;
+		font-size: 30rpx;
+		text-align: center;
+		margin: 0 0 30rpx 30rpx;
+	}
+}

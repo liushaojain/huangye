@@ -1,0 +1,197 @@
+
+.nw{
+	white-space: nowrap;
+}
+
+// .input-placeholder {
+//     color: #cfcfcf;
+// }
+
+.fullPage {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.pos_a {
+    position: absolute;
+}
+
+.pos_r {
+    position: relative;
+}
+
+.pos_f {
+    position: fixed;
+}
+
+.fixed_top {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+		width: 100%;
+		box-sizing:border-box;
+}
+
+.fixed_bottom {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    z-index: 999;
+		box-sizing:border-box;
+}
+
+.clearfix::before, .clearfix::after {
+    content: ' ';
+    display: table;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.tac {
+    text-align: center;
+}
+
+.tas {
+    text-align: left;
+}
+
+.tae {
+    text-align: right;
+}
+
+.bd {
+    border: 1px solid #e5e5e5;
+}
+
+.bdb {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.bdt {
+    border-top: 1px solid #e5e5e5;
+}
+
+.bdb-dashed{
+	border-bottom:1px dashed #e5e5e5;
+}
+
+.bdt-dashed{
+	border-top:1px dashed #e5e5e5;
+}
+
+.bdl {
+    border-left: 1px solid #e5e5e5;
+}
+
+.bdr {
+    border-right: 1px solid #ccc;
+}
+
+.bdn {
+    border: none;
+}
+
+.dpn {
+    display: none;
+}
+
+.border-r1 {
+    border-radius: 10upx;
+    overflow: hidden;
+}
+
+.border-r2 {
+    border-radius: 20upx;
+    overflow: hidden;
+}
+
+.border-r3 {
+    border-radius: 30upx;
+    overflow: hidden;
+}
+
+.border-r4 {
+    border-radius: 40upx;
+    overflow: hidden;
+}
+
+.border-r6 {
+    border-radius: 60upx;
+    overflow: hidden;
+}
+.db {
+    display: block;
+}
+.bsb {
+    box-sizing: border-box;
+}
+
+.dib {
+    display: inline-block;
+}
+
+.tdu {
+    text-decoration: underline;
+}
+
+.opc5 {
+    opacity: 0.5;
+}
+
+.opc7 {
+    opacity: 0.7;
+}
+
+.opc8 {
+    opacity: 0.8;
+}
+
+
+.minBtn {
+    line-height: 60upx;
+    padding-left: 24upx;
+    padding-right: 24upx;
+    border-radius: 10upx;
+    min-width: 72upx;
+    box-sizing: border-box;
+		&.border-r6{
+			border-radius:60upx;
+		}
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ellipsis2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.shadow {
+    box-shadow: 0 0 8px 1px #e5e5e5;
+}
+
+
+
+	

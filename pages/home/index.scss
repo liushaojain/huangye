@@ -1,0 +1,531 @@
+.padding100{
+	padding-bottom: 100rpx;
+}
+.product{
+	background: #F5F5F5;
+}
+.margin0{
+	margin: 0 !important;
+}
+.search{
+	padding: 16rpx;
+}
+.searchBox{
+	margin: 0 30rpx;
+	padding-bottom: 20rpx;
+}
+.searchBox .uni-searchbar,.searchIpt{
+	background:transparent;
+	margin: 20rpx 0;
+}
+.header{
+	margin-bottom: 24rpx;
+	position: relative;
+	background: url(https://xpl-smallbatch.gdoss.xstore.ctyun.cn/dzj/img_shouyebg@2x.png) no-repeat;
+	background-size: contain;
+}
+.status_bar{
+	background-size: cover;
+	// height: 208rpx;
+	// border: 1px solid black;
+	border-radius: 0 0 50rpx 50rpx;
+}
+.nav-bar {
+	display: flex;
+	padding: 20rpx 16rpx;
+	justify-content: center;
+	align-items: center;
+}
+.bartop{
+	box-sizing: content-box;
+	background: linear-gradient(#FD3454, #FA3541);
+	height: 100rpx;
+	overflow: hidden;
+}
+.bar-top{
+	padding-top: var(--status-bar-height);
+	line-height: 80rpx;
+	text-align: center;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 999999;
+	background: linear-gradient(#FD3454, #FA3541);
+	text-align: left;
+	height: 90rpx;
+	overflow: hidden;
+	box-sizing: content-box;
+}
+.bar-top.headerBg{
+	background:white;
+}
+.bar-top.headerBg,.bar-top.headerBg text{
+	color: #000000;
+}
+
+.bar-top .bar-left{
+	display: inline-block;
+	position: absolute;
+	width: 220rpx;
+	left: 30rpx;
+	text-align: left;
+}
+.bar-left .industry{
+	display: inline-block;
+	max-width: 116rpx;
+	margin: 0 5rpx;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap
+}
+
+.bar-left .icon_industry_kind{
+	font-size: 48rpx;
+}
+
+.bar-top text,.status_bar .title{
+	color: white ;
+	vertical-align: middle;
+	font-size: 36rpx;
+	text-align: left;
+	display: block;
+	margin-left: 30rpx;
+}
+
+
+.nav-bar .bar-title {
+	flex: 1;
+	text-align: center;
+	font-size: 30rpx;
+}
+.uni-margin-wrap{
+	height: 360rpx;
+	width: 690rpx;
+	margin: auto;
+}
+.uni-margin-wrap .itemImg{
+	width: 100%;
+	height: auto;
+}
+.bar-left,
+.bar-right {
+	color: #666666;
+	font-size: 28rpx;
+	width:100rpx;
+}
+.bar-right {
+	text-align: right;
+}
+.swiper-item image{
+	width: 100%;
+	height: 360rpx !important;
+}
+.swiper{
+	height: 360rpx !important;
+	border-radius: 24rpx;
+	overflow: hidden;
+}
+.features{
+	background: #ffffff;
+	position: relative;
+	z-index: 99;
+	width: 100%;
+	padding: 20rpx;
+	display: flex;
+//	padding: 0 30rpx;
+	// justify-content: space-between;
+	flex-wrap: wrap;
+	//overflow-x: scroll;
+	flex: 0 0;
+}
+.features .item{
+	flex: 1;
+	margin-right: 10rpx;
+	background: #FFFFFF;
+	font-size: 28rpx;
+	align-items: center;
+	height: 270rpx;
+	background: #FFFFFF;
+	box-shadow: 0rpx 2rpx 20rpx 4rpx rgba(147, 134, 134, 0.12);
+	border-radius: 12rpx 12rpx 12rpx 12rpx;
+	padding: 20rpx 30rpx 20rpx 30rpx;
+}
+.features .item view{
+	color: #E9383E;
+	font-size: 32rpx;
+	font-weight: bold;
+}
+.features .item text{
+	color: #6C6565;
+	font-size: 24rpx;
+	display: block;
+	margin-top: 12rpx;
+}
+.features .item .img1{
+	width: 44rpx;
+	height: 44rpx;
+}
+.features .item .img2{
+	width: 140rpx;
+	height: 140rpx;
+	vertical-align: middle;
+	margin-left: 88rpx;
+}
+.features .item:last-child{
+	margin: 0;
+}
+
+.features .custom-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-width: 20%;
+	margin: 0 0 25rpx 0;
+}
+.features .custom-item .img-item{
+	border-radius: 50%;
+	width: 98rpx;
+	height: 98rpx;
+	margin-bottom: 18rpx;
+}
+
+.Program{
+	display: flex;
+	height: 288rpx;
+	padding: 24rpx 30rpx;
+	color: #303336;
+	font-size: 32rpx;
+}
+.Program .item:last-child{
+	flex-direction: column;
+	margin-left: 20rpx;
+}
+.Program .item:last-child .child{
+	background: linear-gradient(#F2F9FF, #E0F0FF);
+}
+.Program .item:last-child image{
+	height: 64rpx;
+	width: 64rpx;
+	margin-left: 40rpx;
+}
+.Program .item:first-child{
+	background: url(https://xpl-smallbatch.gdoss.xstore.ctyun.cn/icon/pic_home_zixun_bg@2x.png) no-repeat;
+	background-size: 100% 100%;
+}
+.Program .item:first-child text{
+	position: relative;
+	top: -80rpx;
+}
+.Program .item:first-child image{
+	height: 132rpx;
+	width: 132rpx;
+	margin-top: 50rpx;
+}
+.Program .item{
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Program view .item:nth-child(2){
+	margin-top: 20rpx;
+}
+.Program .child{
+	display: flex;
+	flex: 1;
+	width: 100%;
+	height: 210rpx;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 44rpx;
+	flex:1;
+}
+.Program navigator.child{
+	height: 256rpx;	
+}
+.Program .child.top20{
+	margin-top: 20rpx;
+}
+.labelGroupP{
+	padding: 40rpx 0 32rpx 0;
+	padding-right: 20rpx;
+	text-align: center;
+    background: #f5f5f5;
+}
+.labelGroupP image{
+	width: 258rpx;
+	height: 32rpx;
+}
+.labelGroup{
+	display: flex;
+	padding: 16rpx 30rpx;
+	overflow: auto;
+}
+.labelGroup.labelTop{
+	position: fixed;
+	top: 80rpx;
+	left: 0;
+	right: 0;
+	height: 68rpx;
+	padding: 0 30rpx;
+	background: white;
+	z-index: 999999;
+}
+.labelGroup .item{
+	display: inline-block;
+	height: 68rpx;
+	line-height: 68rpx;
+	margin-right: 46rpx;
+	font-size: 28rpx;
+	flex: 1;
+	text-align: center;
+	border-radius: 40rpx;
+	flex-wrap: nowrap;
+	white-space: nowrap;
+}
+.labelGroup .item.active{
+	font-size: 32rpx;
+	color: #F9353B;
+	position: relative;
+}
+// .labelGroup .item:last-child{
+// 	padding-right: 30rpx;
+// }
+.labelGroup .item.active::before{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 10rpx;
+	right: 10rpx;
+	height: 6rpx;
+	background: #F9353B;
+	border-radius: 6rpx;
+}
+.product {
+	margin: 10rpx;
+	background: #F5F5F5;
+}
+.product .item{
+	background: #FFFFFF;
+	border-radius: 44rpx;
+	margin-bottom: 10rpx;
+	padding: 10rpx;
+}
+.product .name{
+	overflow:hidden;	
+	text-overflow:clip;	
+	display:-webkit-box;	
+	-webkit-box-orient:vertical;	
+	-webkit-line-clamp:2; 
+	font-size: 28rpx;
+	color: #303336;
+}
+.product .specification{
+	margin: 5px 0;
+	font-size: 20rpx;
+	color: #93989F;
+	overflow:hidden;
+	text-overflow:clip;	
+	display:-webkit-box;	
+	-webkit-box-orient:vertical;	
+	-webkit-line-clamp:2; 
+}
+.product .last{
+	display: flex;
+}
+.product .price,.product .sold{
+	flex: 1;
+	font-size: 20rpx;
+	color: #93989F;
+	text-align: right;
+	line-height: 40rpx;
+}
+.product .price{
+	color: #FF3931;
+	text-align: left;
+}
+.product .price text{
+	font-size: 32rpx;
+	margin: 0 6rpx;
+}
+.share{
+	background: transparent;
+	padding: 0;
+	border: none;
+	margin-right: 10rpx;
+	color: white;
+}
+.share .iconfont{
+	font-size: 48rpx;
+}
+.share::after{
+	border: none;
+}
+.hint{
+	display: flex;
+	padding: 0 10rpx;
+	position: fixed;
+	height: 100rpx;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(52,73,95,0.8);
+	font-size: 28rpx;
+}
+.hint view{
+	flex: 1;
+	color: white;
+	position: relative;
+	padding-left: 60rpx;
+	line-height: 100rpx;
+}
+.hint icon{
+	position: absolute;
+	top: 22rpx;
+	left: 0rpx;
+}
+.hint icon::before{
+	line-height: 80rpx;
+}
+.hint navigator{
+	height: 64rpx;
+	width: 168rpx;
+	background: #FD3454;
+	margin-top: 18rpx;
+	border-radius: 36rpx;
+	text-align: center;
+	line-height: 64rpx;
+	color: #FFFFFF;
+	border: 1rpx solid #FFFFFF;
+	font-size: 28rpx;
+}
+.selectIndustry{
+	background: rgba(0,0,0,0.7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	z-index: 99;
+	// margin-top: 160rpx;
+}
+.selectIndustry .container{
+	background: white;
+	border-radius: 10rpx;
+	width: 630rpx;
+	border-radius: 20rpx;
+	padding: 0;
+	position: relative;
+}
+.selectIndustry .container .title{
+	background: #279CFF;
+	height: 168rpx;
+	line-height: 168rpx;
+	text-indent: 50rpx;
+	border-radius: 20rpx 20rpx 0 0; 
+	font-size: 40rpx;
+	color: white;
+	background: url(https://xpl-smallbatch.gdoss.xstore.ctyun.cn/icon/pic_homepopup_choose_kind_bg@2x.png);
+	// background-size: contain;
+	background-size: cover;
+}
+.selectIndustry .industry{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 20rpx;
+	padding-bottom: 30rpx;
+	max-height: 486rpx;
+	overflow: auto;
+}
+.selectIndustry .industry .active{
+	border: 1px solid #F9353B;
+	color: #F9353B;
+	background: white;
+}
+.selectIndustry .industry view{
+	box-sizing: border-box;
+	height: 88rpx;
+	width: 273rpx;
+	text-align: center;
+	line-height: 88rpx;
+	background: #F4F5F6;
+	margin: 26rpx 0 0 26rpx;
+	color: #303336;
+	font-size: 30rpx;
+	border-radius: 8rpx;
+	position: relative;
+}
+.selectIndustry .active .iconfont{
+	position: absolute;
+	right: -2rpx;
+	bottom: -30rpx;
+}
+.selectIndustry .icon{
+	text-align: center;
+	margin-top: 30rpx;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+.selectIndustry .icon icon{
+	font-size: 48rpx !important;
+}
+.searchIpt{
+	background: #F4F5F6;
+	border-radius: 32rpx;
+	padding: 0 20rpx;
+	line-height: 64rpx;
+	color: #C9CBCF;
+	font-size: 26rpx;
+	align-items: center;
+	display: flex;
+	margin: 10rpx 0 0 0;
+}
+.searchIpt .iconfont{
+	margin-right: 10rpx;
+	font-size: 38rpx;
+}
+.overflowH{
+	position: absolute;
+	left: 0;
+	// top: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+.discounts{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 999;
+	display: flex;
+	justify-items: center;
+	align-items: center;
+}
+.logo{
+    height: 120rpx;
+    width: 315rpx;
+    margin-left: 30rpx;
+    position: relative;
+    top: -20rpx;
+}
+.service{
+	position: fixed;
+	bottom: 90rpx;
+	right: 30rpx;
+	width: 120rpx;
+	height: 120rpx;
+	z-index: 999999999999;
+	background: url(../../static/img/service.png) no-repeat no-repeat;
+	background-size: cover;
+}
