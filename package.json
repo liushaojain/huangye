@@ -1,0 +1,54 @@
+{
+	"uni-app": {
+		"scripts": {
+			"99": {
+				"title": "99环境",
+				"env": {
+					"UNI_PLATFORM": "mp-weixin",
+					"h5BaseUrl": "http://192.172.21.99/hyzy_new/wap/custom_wine_two/",
+					"previewUrl": "https://packgouat.hucai.com/wineDesignXcx/#/",
+					"isformal": "2"
+				}
+			},
+			"localhost": {
+				"title": "本地",
+				"env": {
+					"UNI_PLATFORM": "mp-weixin",
+					"h5BaseUrl": "http://hyzy.local.com/wap/custom_wine_two/",
+					"previewUrl": "https://packgouat.hucai.com/wineDesignXcx/#/",
+					"isformal": "4"
+				}
+			},
+			"dev": {
+				"title": "dev环境",
+				"env": {
+					"UNI_PLATFORM": "mp-weixin",
+					"h5BaseUrl": "https://hyzy.huyizy.com/wap/custom_wine_two/",
+					"previewUrl": "https://packgouat.hucai.com/wineDesignXcx/#/",
+					"isformal": "3"
+				}
+			},
+			"pro": {
+				"title": "生产环境",
+				"env": {
+					"UNI_PLATFORM": "mp-weixin",
+					"h5BaseUrl": "https://www.huyizy.com/wap/custom_wine_two/",
+					"previewUrl": "https://packgouat.hucai.com/wineDesignXcx/#/",
+					"isformal": "1"
+				}
+			},
+			"pro2": {
+				"title": "生产环境-本地h5",
+				"env": {
+					"UNI_PLATFORM": "mp-weixin",
+					"h5BaseUrl": "http://www.230201.com/wap/custom_wine_two/",
+					"previewUrl": "https://packgouat.hucai.com/wineDesignXcx/#/",
+					"isformal": "1"
+				}
+			}
+		}
+	},
+	"dependencies": {
+		"nim-web-sdk-ng": "^10.4.0"
+	}
+}

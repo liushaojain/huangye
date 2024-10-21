@@ -1,0 +1,85 @@
+{
+	"pages": [
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarBackgroundColor": "#FB333B",
+				"navigationStyle":"custom",
+				"app-plus":{
+					"bounce":"none"
+				}
+			},
+			"meta": {
+				"isBaiduCount": true
+			}
+		},
+		{		
+			"path": "pages/home/customization/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/info/index",
+			"style": {
+				"navigationBarTitleText": "消息"
+			},
+			"meta": {
+				"isBaiduCount": true
+			}
+		},
+		{
+			"path": "pages/user/index",
+			"style": {
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/user/login/index",
+			"style": {
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/user/about/index",
+			"style": {
+				"navigationStyle":"custom"
+			}
+		}
+		
+    ],
+
+	"tabBar": {
+		"color":"#93989F",
+		"selectedColor":"#F73838",
+		"list": [{
+				"pagePath": "pages/home/index",
+				"text": "首页",
+				"iconPath":"static/img/1.png",
+				"selectedIconPath":"static/img/a1.png"
+			},
+			{
+				"pagePath": "pages/info/index",
+				"text": "消息",
+				"iconPath":"static/img/3.png",
+				"selectedIconPath":"static/img/a3.png"
+			},
+			{
+				"pagePath": "pages/user/index",
+				"text": "我的",
+				"iconPath":"static/img/4.png",
+				"selectedIconPath":"static/img/a4.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "虎翼定制",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF",
+		"backgroundColorTop":"#FFFFFF" 
+	},
+	"easycom": {
+		"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+	}
+}
