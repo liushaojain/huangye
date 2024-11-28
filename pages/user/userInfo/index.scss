@@ -1,0 +1,176 @@
+.container{
+	background: #FFFFFF;
+	height: 100VH;
+	overflow: hidden;
+	padding: 0 48rpx;
+	display: flex;
+	flex-direction: column;
+	.header{
+		display: flex;
+		padding: 68rpx 0;
+		// padding-top: 0;
+		align-items: center;
+		font-weight: bold;
+		font-size: 32rpx;
+		justify-content: space-between;
+		.img{
+			height: 128rpx;
+			width: 128rpx;
+			margin-right: 36rpx;
+		}
+		.bnt{
+			width: 156rpx;
+			height: 60rpx;
+			background: #FF7390;
+			border-radius: 30rpx;
+			color: white;
+			font-size: 28rpx;
+			margin-right: 0;
+			font-weight: 500;
+			line-height: 60rpx;
+		}
+	}
+	.contentBox{
+		flex: 1;
+		overflow: auto;
+		border-top: 2rpx solid #EEEDF2;
+		display: flex;
+		flex-direction: column;
+	}
+	.content{
+		padding-top: 32rpx;
+		flex: 1;
+		display: flex;
+	}
+	.baseInfo{
+		.item{
+			margin-bottom: 48rpx;
+			.titleBox{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			.title{
+				font-size: 32rpx;
+				font-weight: bold;
+			}
+			.edit{
+				color: #999999;
+				font-size: 28rpx;
+			}
+		}
+		.tagList{
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 32rpx;
+		}
+		.tag{
+			padding: 0 20rpx;
+			height: 54rpx;
+			background: linear-gradient( 180deg, #FF4169 0%, #F93C64 100%);
+			border-radius: 8rpx;
+			text-align: center;
+			line-height: 54rpx;
+			margin: 0 20rpx 22rpx 0;
+			color: white;
+			font-size: 24rpx;
+		}
+		.Description{
+			font-size: 28rpx;
+			color: #333333;
+			line-height: 33rpx;
+			padding: 20rpx 0;
+		}
+		.aboutMe{
+			width: 654rpx;
+			height: 194rpx;
+			background: rgba(255,239,243,0.5);
+			padding: 32rpx;
+			font-size: 28rpx;
+			color: #333333;
+			line-height: 33rpx;
+			margin-top: 32rpx;
+		}
+	}
+	
+	.imgBox{
+		display: flex;
+		flex-direction: column;
+		.imgList{
+			flex: 1;
+			display: flex;
+			flex-wrap: wrap;
+			.item{
+				width: 200rpx;
+				height: 200rpx;
+				margin: 0 24rpx 24rpx 0;
+				&.selectd{
+					border: 3rpx solid #FF4169;
+				}
+				&:nth-child(3n){
+					margin-right: 0;
+				}
+			}
+			.img{
+				width: 200rpx;
+				height: 200rpx;
+				border-radius: 16rpx 16rpx 16rpx 16rpx;
+			}
+		}
+		.imgFooter{
+			height: 278rpx;
+			display: flex;
+			flex-direction: column;
+			.bnt{
+				width: 654rpx;
+				height: 76rpx;
+				background: linear-gradient( 271deg, #F5496D 0%, #FF7592 100%);
+				border-radius: 200rpx;
+				border: none;
+				font-size: 32rpx;
+				color: white;
+				line-height: 76rpx;
+				margin-bottom: 20rpx;
+			}
+			.delete{
+				position: fixed;
+				height: 146rpx;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				flex: 1;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				box-shadow: 0rpx -12rpx 20rpx 0rpx rgba(0,0,0,0.03);
+				background: #FFFFFF;
+				::v-deep .u-icon {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+				}
+			}
+		}
+	}
+	
+	
+	
+	// <view class="imgBox" v-else>
+	// 	<view class="imgList">
+	// 		<image class="img" src="../../../static/img/logo.png" mode="aspectFill"></image>
+	// 		<image class="img" src="../../../static/img/logo.png" mode="aspectFill"></image>
+	// 		<image class="img" src="../../../static/img/logo.png" mode="aspectFill"></image>
+	// 		<image class="img" src="../../../static/img/logo.png" mode="aspectFill"></image>
+	// 		<image class="img" src="../../../static/img/logo.png" mode="aspectFill"></image>
+	// 		<image class="img" src="../../../static/img/logo.png" mode="aspectFill"></image>
+	// 	</view>
+	// <view class="imgFooter">
+	// 	<button class="bnt">上传照片</button>
+	// 	<view class="delete">
+	// 		<u-icon label="删除" size="40" name="trash"></u-icon>
+	// 	</view>
+	// </view>
+}
+.tabList{
+	padding-bottom: 24rpx;
+}

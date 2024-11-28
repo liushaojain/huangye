@@ -1,0 +1,49 @@
+.pw0 {
+    width: 0%;
+}
+
+.pw50 {
+    width: 50%;
+}
+
+.pw100 {
+    width: 100%;
+}
+
+@for $i from 1 through 30 {
+	.w#{$i*10}{
+		width: $i * 10upx;
+	}
+	.h#{$i*10}{
+		height: $i * 10upx;
+	}
+	.lh#{$i*1}{
+		line-height: $i * 1upx
+	}
+}
+
+.w0{
+	width:0;
+}		
+
+.w1{
+	width:1px;
+}	
+
+.h0{
+	height:0;
+}
+
+.h1{
+	height:1px;
+}
+
+.ph100 {
+    height: 100%;
+}
+.mph100{
+	min-height:100vh;
+}
+.mh100{
+	min-height:100upx;
+}

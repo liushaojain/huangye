@@ -2,6 +2,8 @@
 	"pages": [
 		{
 			"path": "pages/home/index",
+			
+			
 			"style": {
 				"navigationBarBackgroundColor": "#FB333B",
 				"navigationStyle":"custom",
@@ -11,12 +13,6 @@
 			},
 			"meta": {
 				"isBaiduCount": true
-			}
-		},
-		{		
-			"path": "pages/home/customization/index",
-			"style": {
-				"navigationBarTitleText": ""
 			}
 		},
 		{
@@ -45,7 +41,81 @@
 			"style": {
 				"navigationStyle":"custom"
 			}
+		},
+		{
+			"path": "pages/home/search/index",
+			"style": {
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/user/userInfo/index",
+			"style": {
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/user/InformationEntry/index",
+			"style": {
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/authentication/index",
+			"style": {
+				"navigationStyle":"custom"
+			}
+			
+		},
+		{
+			"path": "pages/authentication/user",
+			"style": {
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/authentication/Educational",
+			"style": {
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/authentication/matrimony",
+			"style": {
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/authentication/professional",
+			"style": {
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/authentication/HouseProperty",
+			"style": {
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/authentication/income",
+			"style": {
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/authentication/vehicle",
+			"style": {
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/authentication/complete",
+			"style": {
+				"navigationStyle":"custom"
+			}
 		}
+		
 		
     ],
 
@@ -74,7 +144,7 @@
 	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "虎翼定制",
+		"navigationBarTitleText": "荒野",
 		"navigationBarBackgroundColor": "#FFFFFF",
 		"backgroundColor": "#FFFFFF",
 		"backgroundColorTop":"#FFFFFF" 

@@ -1,0 +1,59 @@
+$bg-image-url: 'http://47.119.182.138:89/images/';
+page{
+	background: #FAF5F8;
+}
+.container{
+	background: url($bg-image-url+'Maskgroupuser@2x.png') no-repeat;
+	background-color: #FAF5F8;
+	background-size: contain;
+	padding-bottom: 150rpx;
+}
+.hintImg{
+	padding: 44rpx 0 78rpx 0;
+	text-align: center;
+	.img{
+		width: 490rpx;
+		height: 32rpx;
+	}
+}
+.footer{
+	padding: 36rpx;
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 99;
+	background: white;
+	.confirmBtn{
+		width: 352rpx;
+		height: 76rpx;
+		line-height: 76rpx;
+		background: linear-gradient( 271deg, #F5496D 0%, #FF7592 100%);
+		border-radius: 200rpx;
+		border: none;
+		color: white;
+		font-size: 32rpx;
+		margin: 0;
+	}
+	.infoListPage{
+		display: flex;
+		.item{
+			width: 14rpx;
+			height: 14rpx;
+			background: #E4E4E4;
+			border-radius: 0rpx 0rpx 0rpx 0rpx;
+			margin-right: 28rpx;
+			border-radius: 50%;
+			&.active{
+				background: #FD6C8A;
+			}
+		}
+	}
+}
+.content{
+	margin: 0 36rpx;
+	margin-bottom: 20rpx;
+}

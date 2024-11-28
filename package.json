@@ -49,6 +49,7 @@
 		}
 	},
 	"dependencies": {
-		"nim-web-sdk-ng": "^10.4.0"
+		"nim-web-sdk-ng": "^10.4.0",
+		"uview-ui": "^1.8.8"
 	}
 }

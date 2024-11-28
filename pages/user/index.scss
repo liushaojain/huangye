@@ -1,0 +1,142 @@
+.container{
+	background: #FAF5F8;
+	height: 100VH;
+	overflow: auto;
+	padding: 0 48rpx;
+	.header{
+		display: flex;
+		padding: 68rpx 0;
+		align-items: center;
+		font-weight: bold;
+		font-size: 32rpx;
+		.img{
+			height: 128rpx;
+			width: 128rpx;
+			margin-right: 36rpx;
+		}
+	}
+	.Records{
+		height: 120rpx;
+		background: #FFFFFF;
+		border-radius: 32rpx;
+		display: flex;
+		align-items: center;
+		.item{
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.label{
+			color: #999999;
+			font-size: 22rpx;
+			margin-top: 12rpx;
+		}
+		.num{
+			font-size: 24rpx;
+			font-weight: bold;
+		}
+	}
+	.contentBox{
+		min-height: 306rpx;
+		background: linear-gradient( 89deg, #FF718E 0%, #F64D70 100%);
+		border-radius: 32rpx;
+		margin-top: 28rpx;
+		.contentTop{
+			display: flex;
+			padding: 12rpx 32rpx;
+			align-items: center;
+			justify-content: space-between;
+			.img{
+				height: 60rpx;
+				width: 60rpx;
+				margin-right: 18rpx;
+			}
+			.hintTop{
+				font-size: 28rpx;
+				font-weight: bold;
+				color: white;
+			}
+			.hintBottom{
+				font-size: 24rpx;
+				color: white;
+			}
+			.btn{
+				width: 128rpx;
+				height: 52rpx;
+				background: #FFFFFF;
+				border-radius: 32rpx;
+				color: #F85174;
+				font-size: 24rpx;
+				line-height: 52rpx;
+				margin-right: 0;
+			}
+		}
+		.contentBody{
+			border-radius: 32rpx;
+			background-color: white;
+			padding: 30rpx;
+			.contentBodyBar{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				.item{
+					text-align: center;
+					flex: 1;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+				}
+				.icon{
+					height: 94rpx;
+					width: 94rpx;
+					border-radius: 52rpx;
+					background: #FE6C89;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+				.img{
+					width: 38rpx;
+					height: 38rpx;
+				}
+				.label{
+					margin-top: 22rpx;
+					font-size: 24rpx;
+					font-weight: bold;
+				}
+			}
+		}
+		.contentList{
+			margin-top: 70rpx;
+			.li{
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-bottom: 46rpx;
+				.listLeft{
+					display: flex;
+					align-items: center;
+				}
+				.img{
+					width: 36rpx;
+					height: 36rpx;
+					margin-right: 20rpx;
+				}
+				&:last-child{
+					margin-bottom: 10rpx;
+				}
+			}
+		}
+	}
+}
+// <view class="contentList">
+// 					<navigator class="li">
+// 						<view class="listLeft">
+// 							<image class="img" :src="imgBaseUrl+'Group694@2x.png'" mode=""></image>
+// 							推荐给好友
+// 						</view>
+// 						<u-icon name="arrow-right" color="#8B8B8B" size="18"></u-icon>
+// 					</navigator>

@@ -1,0 +1,147 @@
+
+view{
+	color: #333333;
+	box-sizing: border-box;
+}
+navigator{
+	box-sizing: border-box;
+}
+navigator:focus,button:focus{
+	background: white;
+}
+.marginT20{
+	margin-top: 20rpx;
+}
+.padding20{
+	padding: 20rpx;
+}
+.borderN{
+	border: none !important;
+}
+.hide{
+	display: none !important;
+}
+.searchBox .uni-searchbar,.searchIpt{
+	background:transparent;
+	margin: 40rpx 0;
+}
+.searchBox{
+	display: flex;
+}
+.searchBox .searchIpt{
+	height: 64rpx;
+	flex:1;
+}
+.searchIpt{
+	background: #F4F5F6;
+	margin:0 20rpx;
+	border-radius: 32rpx;
+	padding: 0 20rpx;
+	line-height: 64rpx;
+	color: #C9CBCF;
+	font-size: 26rpx;
+}
+.searchIpt .iconfont{
+	margin-right: 10rpx;
+}
+
+
+.txtCenter{
+	text-align: center !important;
+}
+uni-checkbox .uni-checkbox-input {
+    border-radius: 50% !important;
+	height: 36rpx !important;
+	width: 36rpx !important;
+}
+uni-checkbox .uni-checkbox-input-checked{
+	background: #F9353B !important;
+	color: white !important;
+}
+.uni-checkbox-input{
+	border-color: #C9CBCF !important;
+}
+uni-checkbox .uni-checkbox-input.uni-checkbox-input-checked:before{
+	font-size: 30rpx;	
+}
+switch{
+	transform:scale(0.6)
+}
+.ellipsis{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.ellipsis2{
+	display: -webkit-box !important;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	word-wrap: break-word;
+}
+.textR{
+	text-align: right;
+}
+.orangeFont{
+	color: #FF5C33;
+}
+
+.blueFont{
+	color: #F9353B;
+}
+
+.greyFont{
+	color: #60656C;
+}
+
+.pinkFont{
+	color: #F75073;
+}
+.whiteFont{
+	color: #FFFFFF;
+}
+.greenFont{
+	color: #39C564;
+}
+.redFont{
+	color: #FF3931;
+}
+.blueBg{
+	background-color: #F9353B;
+}
+.alignCenter{
+	text-align: center;
+}
+
+.flex-start{
+	display: flex;
+	justify-content: flex-start;
+}
+.flex-end{
+	display: flex;
+	justify-content: flex-end;
+}
+.flex-between{
+	display: flex;
+	justify-content: space-between;
+}
+.flex-around{
+	display: flex;
+	justify-content: space-around;
+}
+.itemsCenter{
+	align-items: center;
+}
+.left0{
+	left: 0 !important;
+}
+.u-tabs__wrapper__nav__line {
+	bottom: 0 !important;
+}
+.u-popup__content{
+	border-radius: 28rpx;
+	
+}
+/deep/ .u-upload__wrap{
+	justify-content: center !important;
+}

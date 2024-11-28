@@ -1,0 +1,287 @@
+$bg-image-url: 'http://47.119.182.138:89/images/'; 
+.container{
+	padding-bottom: 120rpx;
+}
+.hreader{
+	height: 780rpx;
+	background: url($bg-image-url+'Group718@2x.png');
+	background-size: cover;
+	padding: 0 48rpx 0 48rpx;
+	
+}
+.title{
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	position: fixed;
+	padding-left: 40rpx;
+	box-sizing: content-box;
+	z-index: 999;
+	transition: all 0.5s;
+	padding-right: 260rpx;
+	.txt{
+		font-size: 44rpx;
+		color: #EA365B;
+	}
+	.search{	
+		.img{
+			height: 62rpx;
+			width: 62rpx;
+		}
+	}
+}
+.swiper{
+	height: 590rpx;
+	.swiper-item{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 608rpx;
+	}
+	.bg{
+		background: #FEE3E8;
+		height: 448rpx;
+		width: 448rpx;
+		border-radius: 36rpx;
+		position: relative;
+		left: 30rpx;
+		top: -30rpx;
+		.img{
+			position: absolute;
+			left: -30rpx;
+			top: 30rpx;
+			height: 448rpx;
+			width: 448rpx;
+			border-radius: 36rpx;
+		}
+	}
+}
+::v-deep .uni-swiper__dots-item{
+	width: 76rpx !important;
+}
+.content{
+	position: relative;
+	top: -10px;
+	border-radius: 20rpx;
+	min-height: 300px;
+	background: white;
+	padding: 32rpx 48rpx;
+	.cHead{
+		
+		.cHeadLine1{
+			display: flex;
+			align-items: center;
+			margin-bottom: 22rpx;
+			.name{
+				font-size: 40rpx;
+				font-weight: bold;
+			}
+			.img{
+				width: 26rpx;
+				height: 36rpx;
+				margin: 0 24rpx 0 12rpx;
+			}
+			.msg{
+				height: 54rpx;
+				width: 206rpx;
+				background: url($bg-image-url+'Group693@2x.png');
+				background-size: cover;
+				line-height: 54rpx;
+				color: white;
+				padding-left: 66rpx;
+			}
+		}
+		.cHeadLine2{
+			display: flex;
+			justify-content: space-between;
+			.txt{
+				display: flex;
+			}
+			.txtItem{
+				display: flex;
+				position: relative;
+				
+				color: #999999;
+				margin-right: 34rpx;
+				&::after{
+					position: absolute;
+					height: 10rpx;
+					width: 1rpx;
+					background: #999999;
+				}
+				&::last-child{
+					margin-right: 0;
+				}
+			}
+		}
+		.cHeadLine3{
+			display: flex;
+			margin-top: 24rpx;
+			justify-content: space-between;
+			align-items: center;
+			font-size: 28rpx;
+			.item{
+				display: flex;
+				align-items: center;
+			}
+			.img1{
+				width: 24rpx;
+				height: 30rpx;
+				margin-right: 16rpx; 
+			}
+			.img2{
+				width: 22rpx;
+				height: 32rpx;
+				margin-right: 16rpx;
+			}
+		}
+	}
+	.itemBox{
+		margin-top: 42rpx;
+		.itemhead{
+			display: flex;
+			align-items: center;
+			font-size: 28rpx;
+			font-weight: bold;
+			height: 46rpx;
+			.img{
+				margin-right: 16rpx;
+				height: 40rpx;
+				width: 40rpx;
+			}
+		}
+		.li{
+			display: flex;
+			justify-content: space-between;
+			font-size: 28rpx;
+			margin-top: 28rpx;
+			.txt{
+				color: #999999;
+			}
+		}
+		.texts{
+			margin-top: 20rpx;
+			font-size: 28rpx;
+			line-height: 50rpx;
+		}
+		.tagbox{
+			margin-top: 36rpx;
+			display: flex;
+			flex-wrap: wrap;
+			.tag{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 54rpx;
+				padding: 0 20rpx;
+				border-radius: 8rpx;
+				background: #FFF0F3;
+				color: #FF4169;
+				margin: 0 20rpx 22rpx 0;
+			}
+		}
+		.imgs{
+			margin-top: 52rpx;
+			.img{
+				width: 100%;
+				margin-bottom: 28rpx;
+			}
+		}
+		.centerBox{
+			width: 368rpx;
+			height: 370rpx;
+			background: url($bg-image-url+'Group699@2x.png');
+			background-size: cover;
+			margin: 36rpx auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 28rpx;
+			.txt{
+				color: white;
+				text-align: center;
+			}
+		}
+		.itemContent{
+			position: relative;
+		}
+		.tagList{
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			.tag{
+				height: 56rpx;
+				padding: 0 20rpx;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 8rpx;
+				background: #F86684;
+				font-size: 28rpx;
+				position: absolute;
+				color: white;
+				word-break: keep-all;
+			}
+			.tag1{
+				top: 45rpx;
+				right: 420rpx;
+			}
+			.tag2{
+				top: 45rpx;
+				left: 420rpx;
+			}
+			.tag3{
+				top: 156rpx;
+				right: 456rpx;
+			}
+			.tag4{
+				top: 156rpx;
+				left: 456rpx;
+			}
+			.tag5{
+				top: 272rpx;
+				right: 420rpx;
+			}
+			.tag6{
+				top: 272rpx;
+				left: 420rpx;
+			}
+		}
+		// <view class="tagList">
+		// 	<view class="tagItem">
+		// 		<text class="tag">
+		// 			偶尔喝酒
+		// 		</text>
+		// 		<text class="tag">
+		// 			不接受养大型宠物
+		// 		</text>
+		// 	</view>
+	}
+	
+}
+.footerBtn{
+	background: url($bg-image-url+'Rectangle3471962@2x.png');
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-size: cover;
+	height: 160rpx;
+	width: 100%;
+	.item{
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		margin: 0 42rpx;
+	}
+	.img{
+		width: 96rpx;
+		height: 96rpx;
+	}
+}

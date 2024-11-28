@@ -23,3 +23,7 @@ const app = new Vue({
 	share
 })
 app.$mount()
+// 宝塔账号密码 
+// https://47.119.182.138:26031/files lhnfebt7 cad2a228
+// https://lanhuapp.com/link/#/invite?sid=lXgugTma
+// 小程序sercret 8fca07b1b3028131a1c25fa90f315fcb
