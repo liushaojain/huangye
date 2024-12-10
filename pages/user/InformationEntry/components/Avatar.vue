@@ -2,14 +2,14 @@
 	<view>
 		<view class="uploadBox">
 			<!-- <u-upload :fileList="fileList1" @afterRead="afterRead" @delete="deletePic" name="1" multiple :maxCount="1"> -->
-				<view class="imgUpload">
-					<image class="img" :src="imgBaseUrl+'Maskgroup_setInfo@2x.png'" mode="widthFix"></image>
-					<text class="mt10">请上传本人照片，需看清长相</text>
-				</view>
+			<view class="imgUpload">
+				<image class="img" :src="avart" mode="widthFix"></image>
+				<text class="mt10">请上传本人照片，需看清长相</text>
+			</view>
 
 			<!-- </u-upload> -->
-			
-			
+
+
 			<view class="footer">
 				<view class="txtCenter mb10">以下照片不能通过审核</view>
 				<view class="imgList">
@@ -30,14 +30,25 @@
 </template>
 
 <script>
+	import {
+		get_file_name
+	} from '@/utils/util.js'
+	import {updAvatar} from '@/Api/uesr.js'
 	export default {
 		data() {
 			return {
 				imgBaseUrl: this.imgBaseUrl,
-				fileList1: []
+				fileList1: [],
+				avart :'',
+				uploadavart:'',
+				defaultAvart:'Maskgroup_setInfo@2x.png'
 			}
 		},
+		mounted() {
+			this.avart = this.imgBaseUrl+'/'+this.defaultAvart;
+		},
 		methods: {
+			get_file_name,
 			// 删除图片
 			deletePic(event) {
 				this[`fileList${event.name}`].splice(event.index, 1)
@@ -47,25 +58,58 @@
 				let lists = [].concat(event.file)
 				for (let i = 0; i < lists.length; i++) {
 					const result = await this.uploadFilePromise(lists[i].url)
+					if(result.success ==true){
+						this.avart = result.data
+						this.uploadavart = result.iamgeUrl
+					}
 				}
 			},
-			uploadFilePromise(url) {
-				return new Promise((resolve, reject) => {
-					let a = uni.uploadFile({
-						url: 'http://192.168.2.21:7001/upload', // 仅为示例，非真实的接口地址
-						filePath: url,
-						name: 'file',
-						formData: {
-							user: 'test'
-						},
-						success: (res) => {
-							setTimeout(() => {
-								resolve(res.data.data)
-							}, 1000)
-						}
-					});
-				})
+			async uploadFilePromise(url) {
+				const sign =await this.$apis.uesrApi.getOss()
+				if(sign.status==1){
+					let fileName = this.get_file_name(url)
+					return this.upload(sign,url,fileName)
+				}
+				return Promise.reject(new Error("上传失败"));
 			},
+			async submit(){
+				if(this.uploadavart){
+					return this.$apis.uesrApi.updAvatar({
+						file:this.uploadavart
+					})
+				}else{
+					uni.$u.toast('请选择头像')
+				}
+			
+			},
+			async upload(sign,url,fileName){
+				return new Promise((resolve,reject)=>{
+				let key='avatar/'+fileName;
+				uni.uploadFile({
+					url: sign.data.host, // 仅为示例，非真实的接口地址
+					filePath: url,
+					name: 'file',
+					formData: {
+						name:fileName,
+						key,
+						policy:sign.data.policy,
+						OSSAccessKeyId:sign.data.ossAccessKeyId,
+						success_action_status: '200',
+						signature:sign.data.signature
+					},
+					success: (res) => {
+						if(res.statusCode==200){
+							resolve({success: true, data: sign.data.host+'/'+key,iamgeUrl:key})
+						 }else{
+							  reject({success: false, data: '上传失败'})
+						 }
+					},
+					fail: () => {
+					  reject({success: false, data: '上传失败'})
+					}
+				});
+				})
+			}
 		}
 	}
 </script>
