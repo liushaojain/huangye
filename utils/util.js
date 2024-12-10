@@ -52,3 +52,33 @@ export function dateFormat(timestamp) {
 	const day = date.getDate();
 	return `${year}-${month}-${day}`;
 }
+// 生成文件名随机字符串
+export function random_string(len) {
+　　const strLeng = len || 32;
+　　const chars = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678';   
+　　const maxPos = chars.length;
+　　let pwd = '';
+　　for (let i = 0; i < strLeng; i++) {
+    　　pwd += chars.charAt(Math.floor(Math.random() * maxPos));
+    }
+    return pwd;
+}
+
+// 获取文件后缀
+export function get_suffix(filename) {
+    const pos = filename.lastIndexOf('.')
+    let suffix = ''
+    if (pos != -1) {
+        suffix = filename.substring(pos)
+    }
+    return suffix;
+}
+
+export function get_file_name(filename) {
+    const pos = filename.lastIndexOf('/')
+    let suffix = ''
+    if (pos != -1) {
+        suffix = filename.substring(pos+1)
+    }
+    return suffix;
+}

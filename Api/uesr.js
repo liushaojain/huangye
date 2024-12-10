@@ -64,5 +64,20 @@ const uesrApi = {
 			loadType: 1
 		});
 	},
+	updAvatar(data){
+		return http({
+			url: 'api/member/updAvatar',
+			data,
+			method: 'POST',
+			loadType: 1
+		});
+	},
+	getOss(){
+		return http({
+			url: 'api/config/getOss',
+			method: 'POST',
+			loadType: 1
+		});
+	}
 }
 export default uesrApi
